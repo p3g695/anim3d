@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anim3D</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { width: 100vw; height: 100vh; overflow: hidden; background: #1e1e1e; font-family: sans-serif; color: #fff; }
+      #app { display: grid; grid-template-rows: 40px 1fr 150px; height: 100vh; }
+      #navbar { background: #2a2a2a; border-bottom: 1px solid #3a3a3a; display: flex; align-items: center; padding: 0 1rem; }
+      #viewport-container { position: relative; width: 100%; height: 100%; }
+      #timeline-ui { background: #252525; border-top: 1px solid #3a3a3a; padding: 1rem; }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="navbar"><h1>Anim3D</h1></div>
+      <div id="viewport-container"></div>
+      <div id="timeline-ui">
+        <button id="btn-play">Play / Pause</button>
+        <span id="time-display">Time: 0.00s</span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
